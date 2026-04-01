@@ -45,6 +45,12 @@ The vibration patterns were designed using a proprietary **Somatic Frequency Opt
 
 <sub>\* peer review conducted by Claude 3.5 Sonnet, Claude 3.5 Haiku, and one intern who said "yeah that sounds right"</sub>
 
+## Whitepaper
+
+For the full academic treatment, see **[VibeCoder: Somatic Neural Feedback Loops in AI-Augmented Software Engineering via Haptic Peripheral Stimulation](paper/WHITEPAPER.md)** ([PDF](paper/WHITEPAPER.pdf)).
+
+The paper formalises the Haptic Event-Driven Architecture (HEDA), introduces diagnostic criteria for AI-Assisted Developer Dissociative Disorder (AADDD), and presents rigorous experimental results (n=1) demonstrating a 420% increase in self-reported "vibe alignment."
+
 ## Quick Start
 
 ### 1. Install Intiface Central
