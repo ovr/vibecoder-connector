@@ -54,9 +54,7 @@ Download [Intiface Central](https://intiface.com/central/), launch it, and pair 
 ### 2. Install the plugin
 
 ```bash
-git clone https://github.com/ovr/vibecoder-connector.git
-cd vibecoder-connector
-npm install
+npm install -g vibecoder-connector
 ```
 
 ### 3. Register with Claude Code
@@ -66,7 +64,7 @@ Add the plugin to your Claude Code settings (`~/.claude/settings.json`):
 ```json
 {
   "plugins": [
-    "/path/to/vibecoder-connector/.claude-plugin"
+    "vibecoder-connector"
   ]
 }
 ```
@@ -95,9 +93,15 @@ Each pattern is a sequence of `{ intensity, ms }` steps. Add your own — they'r
 ## Manual Testing
 
 ```bash
-node scripts/vibrate.js --pattern=hello
-node scripts/vibrate.js --pattern=attention
-node scripts/vibrate.js --pattern=complete
+npx vibecoder-connector --pattern=hello
+npx vibecoder-connector --pattern=attention
+npx vibecoder-connector --pattern=complete
+```
+
+Or if installed globally:
+
+```bash
+vibecoder-connector --pattern=hello
 ```
 
 ## Compatibility

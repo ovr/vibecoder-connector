@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Vibecoder Connector - haptic feedback from connected devices during Claude Code sessions via Intiface Central",
   "type": "module",
+  "bin": {
+    "vibecoder-connector": "scripts/vibrate.js"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
