@@ -3,7 +3,24 @@
   "version": "0.0.1",
   "description": "Vibecoder Connector - haptic feedback from connected devices during Claude Code sessions via Intiface Central",
   "type": "module",
-  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovr/vibecoder-connector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ovr/vibecoder-connector/issues"
+  },
+  "homepage": "https://github.com/ovr/vibecoder-connector#readme",
+  "keywords": [
+    "claude code",
+    "claude",
+    "connector",
+    "vibration"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "buttplug": "^4.0.0"
   }
