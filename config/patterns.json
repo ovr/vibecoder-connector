@@ -1,0 +1,34 @@
+{
+  "intifaceUrl": "ws://127.0.0.1:12345",
+  "intensityMultiplier": 1.0,
+  "patterns": {
+    "attention": {
+      "description": "Slow wave when Claude needs your input",
+      "steps": [
+        { "intensity": 0.2, "ms": 400 },
+        { "intensity": 0.5, "ms": 400 },
+        { "intensity": 0.2, "ms": 400 },
+        { "intensity": 0.5, "ms": 400 },
+        { "intensity": 0.0, "ms": 0 }
+      ]
+    },
+    "complete": {
+      "description": "Quick celebratory burst when task finishes",
+      "steps": [
+        { "intensity": 0.6, "ms": 150 },
+        { "intensity": 1.0, "ms": 200 },
+        { "intensity": 0.4, "ms": 150 },
+        { "intensity": 0.0, "ms": 0 }
+      ]
+    },
+    "hello": {
+      "description": "Double tap on session start",
+      "steps": [
+        { "intensity": 0.4, "ms": 150 },
+        { "intensity": 0.0, "ms": 120 },
+        { "intensity": 0.4, "ms": 150 },
+        { "intensity": 0.0, "ms": 0 }
+      ]
+    }
+  }
+}

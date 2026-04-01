@@ -1,0 +1,6 @@
+{
+  "name": "vibecoder-connector",
+  "version": "0.0.1",
+  "description": "Haptic feedback from connected devices during Claude Code sessions via Intiface Central",
+  "hooks": "../hooks/hooks.json"
+}

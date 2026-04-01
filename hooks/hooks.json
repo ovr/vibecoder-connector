@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [{
+      "matcher": "startup|resume",
+      "hooks": [{
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/vibrate.js\" --pattern=hello",
+        "timeout": 10,
+        "async": true
+      }]
+    }],
+    "Notification": [{
+      "matcher": "permission_prompt|idle_prompt|elicitation_dialog",
+      "hooks": [{
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/vibrate.js\" --pattern=attention",
+        "timeout": 10,
+        "async": true
+      }]
+    }],
+    "Stop": [{
+      "hooks": [{
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/vibrate.js\" --pattern=complete",
+        "timeout": 10,
+        "async": true
+      }]
+    }]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "vibecoder-connector",
+  "version": "0.0.1",
+  "description": "Vibecoder Connector - haptic feedback from connected devices during Claude Code sessions via Intiface Central",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "buttplug": "^4.0.0"
+  }
+}
